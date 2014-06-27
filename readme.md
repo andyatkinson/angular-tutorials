@@ -8,6 +8,8 @@
 
 ### Notes
 
+  * angular has a subset of jquery called jqlite. If jQuery is available, `angular.element` is an alias for the jQuery function.
+  * `$watch` and `$apply` are used for the two-way data binding
   * `ng-show` attribute can be used when an attribute should be shown/hidden by the controller
   * function defined on ng-submit on form, there should be a controller function that matches that name
   * scope object lets us interact with a view
@@ -19,6 +21,7 @@
   * directives add functionality to markup, can create templates
   * two-way data binding
   * with asset minification, for rails asset pipeline, can set mangle: false for the uglifier
+  * a promise is a technique for performing asynchronous tasks. `then()` takes an argument that is a function to run when the promise is fulfilled.
 
 ### Resources
 
