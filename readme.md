@@ -16,14 +16,35 @@
   * add ng-app attribute to html tag
   * ng-model: bind a model to the form element, e.g. newEntry.name
   * ng-repeat attribute on a list item
-  * ng-click attribute
   * for a controller, use @ symbol to expose the object to the window
-  * directives add functionality to markup, can create templates
   * two-way data binding
   * with asset minification, for rails asset pipeline, can set mangle: false for the uglifier
   * a promise is a technique for performing asynchronous tasks. `then()` takes an argument that is a function to run when the promise is fulfilled.
+  * module can have a config function, that can have different routes, routes can define view and controller, controllers call out to a factory/service/providers/value/resources
+  * `$routeProvider`, when, when, otherwise, see ngRoute
+  * can chain factory and controller functions on the module
+  * factory and service are different in that factory author creates a JS object and returns it. Service uses `this` keyword. This might be awkward with coffeescript.
+  * can animate views
+
+### [directives](https://docs.angularjs.org/api/ng/directive)
+
+  * add new things to HTML, can create templates, add attributes, elements
+  * `ng-init`, `ng-app`, `ng-repeat`
+  * ng-click, argument is function like "addCustomer()"
+  * ng-view, routes can be used to define routes with multiple views, and click between them
+
+### [filters](https://docs.angularjs.org/api/ng/filter)
+
+  * `{{ customer.name | uppercase }}`
+  * filter:name
+  * `orderBy:'name'
+
+### Views, controllers, scope (view model)
+
+  * controller drives what gets updated into the view, `$scope` between view and controller
 
 ### Resources
 
   * [angular railscast](http://railscasts.com/episodes/405-angularjs)
   * [egghead.io](https://egghead.io/)
+  * [youtube video from dan wahlin](https://www.youtube.com/watch?v=i9MHigUZKEM)
